@@ -42,8 +42,8 @@ For more detailed information about ip-scan.py, including input file formats and
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/ctf-utilities.git
-   cd ctf-utilities
+   git clone https://github.com/degun-osint/CTFdUtils
+   cd CTFdUtils
    ```
 
 2. Install the required Python packages:
