@@ -55,10 +55,6 @@ For more detailed information about ip-scan.py, including input file formats and
 
 Contributions are welcome! If you have ideas for new scripts or improvements to existing ones, please feel free to submit a Pull Request or open an Issue.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - [IP-API](https://ip-api.com/) for providing ISP information in ip-scan.py
