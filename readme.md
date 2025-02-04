@@ -37,7 +37,7 @@ python detect_ctf_triche.py --file chall.csv --delay 300
 | `--include`      | Intervalle des challenges à inclure (ex: `69:200`) |
 | `--output`       | Nom du fichier CSV de sortie |
 
-** Vous pouvez ajuster la variable `pair_detect` qui définit le seuil de détection des paires de joueurs suspects (défaut `3`) **
+** Vous pouvez ajuster la variable `pair_detect` qui définit le seuil de détection des paires de joueurs suspects (défaut = `3`) **
 
 #### 📊 Résultats
 Le script génère deux fichiers CSV :
