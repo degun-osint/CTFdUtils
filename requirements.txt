@@ -1,3 +1,4 @@
+# requierements
 requests>=2.32.3
 prettytable>=3.11.0
 pandas>=2.2.3

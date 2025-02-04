@@ -3,7 +3,7 @@ import argparse
 from collections import defaultdict
 from itertools import combinations
 
-pair_detect = 3
+pair_detect = 3 # definit le seuil de detection des paires.
 
 # Charger le fichier CSV
 def load_data(file_path):

@@ -25,7 +25,7 @@ pip install pandas
 #### 🚀 Utilisation
 ##### Commande de base
 ```bash
-python detect_ctf_triche.py --file chall.csv --delay 4000
+python detect_ctf_triche.py --file chall.csv --delay 300
 ```
 
 ##### Options disponibles
