@@ -4,7 +4,53 @@ This repository contains a collection of utility scripts for Capture The Flag (C
 
 ## Scripts
 
-### 1. ip-scan.py
+### flag_police
+#### Détection de triche dans les CTF
+
+Ce script permet d'analyser les soumissions des challenges d'un CTF afin d'identifier des comportements suspects, notamment des flags soumis trop rapidement par plusieurs utilisateurs sur un même challenge.
+
+#### 📌 Fonctionnalités
+- **Filtrage par délai** : Détecte les flags soumis trop rapidement par plusieurs utilisateurs.
+- **Exclusion de challenges** : Permet d'exclure certains challenges de l'analyse.
+- **Filtrage par intervalle de challenges** : Permet d'analyser uniquement une plage de challenges définie.
+- **Analyse des récurrences** : Identifie les utilisateurs qui flagguent souvent ensemble.
+- **Export des résultats** : Génère des fichiers CSV contenant les résultats de l'analyse.
+
+#### 📂 Installation
+Assurez-vous d'avoir **Python 3** et **pandas** installés :
+```bash
+pip install pandas
+```
+
+#### 🚀 Utilisation
+##### Commande de base
+```bash
+python detect_ctf_triche.py --file chall.csv --delay 4000
+```
+
+##### Options disponibles
+| Option            | Description |
+|------------------|-------------|
+| `--file`         | Chemin du fichier CSV contenant les soumissions |
+| `--delay`        | Délai en secondes pour considérer une soumission comme suspecte |
+| `--exclude`      | Liste des challenges à exclure (séparés par des virgules) |
+| `--include`      | Intervalle des challenges à inclure (ex: `69:200`) |
+| `--output`       | Nom du fichier CSV de sortie |
+
+** Vous pouvez ajuster la variable `pair_detect` qui définit le seuil de détection des paires de joueurs suspects (défaut `3`) **
+
+#### 📊 Résultats
+Le script génère deux fichiers CSV :
+1. **`suspicious_flags.csv`** : Liste des challenges suspects avec les utilisateurs impliqués.
+2. **`suspicious_flags_pairs.csv`** : Liste des paires d'utilisateurs ayant flaggué ensemble plusieurs fois.
+
+## 📌 Remarque
+- Si aucun comportement suspect n'est détecté, le script affiche `✅ Aucune activité suspecte détectée.`
+- Pour une meilleure détection, ajustez le délai (`--delay`) en fonction du contexte du CTF.
+
+
+
+### ip-scan.py
 
 This script analyzes IP address usage across different teams, identifies shared IPs between teams, and provides ISP information for each IP address. It's designed to help detect potential collaboration or account sharing between teams in a competition.
 
